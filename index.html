@@ -1,13 +1,358 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
+<title>HOME</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Peculiar Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<script src="js/jquery-1.11.0.min.js"></script>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
 
+<!--start-smoth-scrolling-->
+<!--animated-css-->
+		<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+		<script src="js/wow.min.js"></script>
+		<script>
+		 new WOW().init();
+		</script>
+<!--animated-css-->  
+</head>
 <body>
-	<h2>这是我的第一个网站</h2>
-<p>dfgdgdg</p>
-<p>dfijdigjihfkfndj</p>
+	<!--start-banner-->
+		<div class="banner" id="home">
+			<div  id="top" class="callbacks_container">
+			     <ul class="rslides" id="slider4">
+			       <li>
+	    				<div class="banner-1">
+						</div>
+					</li>
+					 <li>
+	    				<div class="banner-2">
+						</div>
+					</li>
+			     </ul>
+			</div>
+			<div class="clearfix"> </div>
+			<div class="header">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt=""></a>
+				</div>
+				<div class="navigation">
+				 <span class="menu"></span> 
+					<ul class="navig">
+						<li><a href="index.html" class="scroll">主页</a><span>|</span></li>
+						<li><a href="#portfolio" class="scroll">自我介绍</a><span>|</span></li>
+						<li><a href="#contact" class="scroll">个人经历</a></li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="banner-bottom">
+				<ul>
+					<li><a href="#"><span class="twt"> </span></a></li>
+					<li><a href="#"><span class="t"> </span></a></li>
+					<li><a href="#"><span class="g"> </span></a></li>
+				</ul>
+			</div>
+		</div>	
+	<!-- script-for-menu -->
+		 <script>
+				$("span.menu").click(function(){
+					$(" ul.navig").slideToggle("slow" , function(){
+					});
+				});
+		 </script>
+		 <!-- script-for-menu -->
+		<!--Slider-Starts-Here-->
+				<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: false,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!--End-slider-script-->
+	<!--end-banner-->	
+    <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >企业网站模板</a></div>
+	<!--start-free-->	 
+	<div class="free wow bounce" data-wow-delay="0.1s">
+		<div class="container">
+			<div class="free-main">
+				<h1>美好的生活就在你的眼前，你不赶快紧紧的抓住他，就会被小三抢走</h1>
+				<p>释迦摩尼曾说过：“伸手需要一瞬间，牵手却要很多年，若无相欠怎会相见”。所有的一切早已命中注定，你逃不掉，只有勇敢的面对它。 </p>
+			</div>
+		</div>
+	</div>
+	<!--end-free-->	 
+	<!-- Portfolio Starts Here -->
+	<div class="portfolios entertain_box  wow fadeInUp" data-wow-delay="0.4s" id="portfolio">
+		<div class="container">
+			<div class="portfolio-top">
+			<ul id="filters" class="clearfix">
+						<li><span class="filter active" data-filter="app card icon logo web">个人信息</span></li>
+						<li><span class="filter" data-filter="app">教育经历</span></li>
+						<li><span class="filter" data-filter="photo">项目经历</span></li>
+						<li><span class="filter" data-filter="card">生活照片</span></li>
+					</ul>
+					<div id="portfoliolist">
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/p-1.jpg" class="b-link-stripe b-animate-go   swipebox"  title="Image Title">
+						     <img src="images/port-1.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">
+						     	<ul>
+						     		<li><img src="images/hrt.png" alt=""/></li>
+						     		<li><img src="images/srch.png" alt=""/></li>
+						     		<li><img src="images/rsh.png" alt=""/></li>
+						     	</ul>
+						     	</h2>
+						  	 </div></a>
+		                </div>
+					</div>				
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/p-2.jpg" class="b-link-stripe b-animate-go   swipebox"  title="Image Title">
+						     <img src="images/port-2.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">
+						     	<ul>
+						     		<li><img src="images/hrt.png" alt=""/></li>
+						     		<li><img src="images/srch.png" alt=""/></li>
+						     		<li><img src="images/rsh.png" alt=""/></li>
+						     	</ul>
+						     	</h2>
+						  	 </div></a>
+		               </div>
+					</div>		
+					<div class="portfolio photo mix_all" data-cat="photo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+						
+								<a href=" zuoye2/华东.html">
+						     <img src="images/port-3.jpg" /></a> <div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">
+
+						     	<ul>
+						     		<li><img src="images/hrt.png" alt=""/></li>
+						     		<li><img src="images/srch.png" alt=""/></li>
+						     		<li><img src="images/rsh.png" alt=""/></li>
+						     	</ul>
+						     	</h2>
+						  	 </div></a>
+		                </div>
+					</div>				
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/p-4.jpg" class="b-link-stripe b-animate-go   swipebox"  title="Image Title">
+						     <img src="images/port-4.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">
+						     <ul>
+						     		<li><img src="images/hrt.png" alt=""/></li>
+						     		<li><img src="images/srch.png" alt=""/></li>
+						     		<li><img src="images/rsh.png" alt=""/></li>
+						     	</ul>
+						     	</h2>
+						  	 </div></a>
+		                </div>
+		               
+					</div>	
+					<div class="portfolio photo mix_all" data-cat="photo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							
+								<a href="zuoye1/wolong.html">
+						     <img src="images/port-5.jpg" /> </a><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">
+						     	<ul>
+						     		<li><img src="images/hrt.png" alt=""/></li>
+						     		<li><img src="images/srch.png" alt=""/></li>
+						     		<li><img src="images/rsh.png" alt=""/></li>
+						     	</ul>
+						     	</h2>
+						  	 </div></a>
+		                </div>
+		               
+					</div>
+					<div class="portfolio photo mix_all" data-cat="photo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							
+								<a href="zuoye3/ipad.html">
+						     <img src="images/port-8.jpg" /> </a><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">
+						     	<ul>
+						     		<li><img src="images/hrt.png" alt=""/></li>
+						     		<li><img src="images/srch.png" alt=""/></li>
+						     		<li><img src="images/rsh.png" alt=""/></li>
+						     	</ul>
+						     	</h2>
+						  	 </div></a>
+		                </div>
+		               
+					</div>				
+					
+		</div>
+		</div>
+	</div>
+</div>
+<link rel="stylesheet" href="css/swipebox.css">
+	<script src="js/jquery.swipebox.min.js"></script> 
+	    <script type="text/javascript">
+			jQuery(function($) {
+				$(".swipebox").swipebox();
+			});
+		</script>
+	<!-- Portfolio Ends Here -->
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+<script type="text/javascript">
+$(function () {
+	
+	var filterList = {
+	
+		init: function () {
+		
+			// MixItUp plugin
+		// http://mixitup.io
+		$('#portfoliolist').mixitup({
+			targetSelector: '.portfolio',
+			filterSelector: '.filter',
+			effects: ['fade'],
+			easing: 'snap',
+			// call the hover effect
+			onMixEnd: filterList.hoverEffect()
+		});				
+	
+	},
+	
+	hoverEffect: function () {
+	
+		// Simple parallax effect
+		$('#portfoliolist .portfolio').hover(
+			function () {
+				$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+				$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+			},
+			function () {
+				$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+				$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+			}		
+		);				
+	
+	}
+
+};
+
+// Run the show!
+	filterList.init();
+	
+});	
+</script>
+<!--Blog-Starts-Here-->
+	<div class="blog">
+		<div class="container">
+			<div class="blog-main">
+				<div class="col-md-4 blog-left">
+					<div class="blog-one wow bounceInLeft" data-wow-delay="0.4s">
+						<img src="images/blog-1.png" alt="" />
+						<h3>个人经历</h3>
+						<p>学校篇：在校级社团担任过部长职务，现在班级担任学习委员</p>
+					</div>
+				</div>
+				<div class="col-md-4 blog-left">
+					<div class="blog-one wow bounce" data-wow-delay="0.1s">
+						<img src="images/blog-4.png" alt="" />
+						<h3>个人经历</h3>
+						<p>社团篇：在校组织参与多次活动策划，执行工作</p>
+					</div>
+				</div>
+				<div class="col-md-4 blog-left active">
+					<div class="blog-one wow bounceInRight" data-wow-delay="0.4s">
+						<img src="images/blog-3.png" alt="" />
+						<h3>个人经历</h3>
+						<p>生活篇：热爱生活，爱旅游，爱音乐，爱美食，爱所有美丽的一切</p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+<!--Blog-Ends-Here-->
+<!--Contact-Starts-Here-->
+	<div class="contact" id="contact">
+		<div class="container">
+			<div class="contact-main">
+				<div class="col-md-6 contact-left wow bounceInLeft" data-wow-delay="0.4s">
+					<h3>个人经历</h3>
+				    <p>喜欢的话</p>
+					<p>如果生命是一趟无法回头又无法循环的旅程，那么这一路我们迎着风，再苦再累也要保持微笑。---《向着那光亮那方》</p>
+                     <p>不要天天抱怨，因为久了你就会发现，抱怨除了扰乱你和别人的心情，什么用都没有</p>
+                     <p>你现在的态度，决定以后的你</p>
+                     <p>喜欢喝酒。酒是匕首，剐去不堪，切肝断肠。</p>
+                     <p></p>
+					
+				</div>
+				<div class="col-md-6 contact-left wow bounceInRight" data-wow-delay="0.4s">
+					<input type="text" value="Name" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Name';}"/>
+					<input type="text" value="Email address" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Email address';}"/>
+					<div class="contact-textarea">
+						<textarea value="Your question" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Your question';}">Your question</textarea>
+					</div>
+					<div class="contact-but">
+						<input type="submit" value="SEND" />
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+<!--Contact-Ends-Here-->
+<!--Footer-Starts-Here-->
+	<div class="footer">
+		<div class="conatiner">
+			<div class="footer-text wow bounce" data-wow-delay="0.1s">
+				<p>让我们携手未来，共同谱写新的篇章</p>
+				<ul>
+					<li><a href="#"><span class="twt"> </span></a></li>
+					<li><a href="#"><span class="t"> </span></a></li>
+					<li><a href="#"><span class="g"> </span></a></li>
+				</ul>
+			</div>
+		</div>
+		 <script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+<!--Footer-Ends-Here-->
 </body>
 </html>

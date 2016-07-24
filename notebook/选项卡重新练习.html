@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+       *{
+       	padding:0px;
+       	margin:0px;
+       }
+       ul li{
+       	list-style: none;
+       	float:left;
+       	border:1px solid red;
+       	width:50px;
+       }
+       .box{
+       	width:154px;
+       	height:300px;
+       	border:1px solid red;
+       }
+       .box h1{
+       	display:none;
+       }
+       .box .active{
+       	display:block;
+       }
+	</style>
+</head>
+<body>
+	<ul>
+		<li>标题一</li>
+		<li>标题二</li>
+		<li>标题三</li>
+	</ul>
+	<div class="box">
+		<h1 class="active">内容一</h1>
+		<h1>内容二</h1>
+		<h1>内容三</h1>
+	</div>
+	<script src="script/jquery.js"></script>
+	<script>
+       $("li").click(function(){
+       	var index=$(this).index()
+       	$(".box h1").eq(index).addClass("active").siblings().removeClass("active")
+       })
+	</script>
+</body>
+</html>

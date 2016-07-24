@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" class="txt">
+	<input type="button" value="0" class="nub">
+	<input type="button" value="1" class="nub">
+	<input type="button" value="2" class="nub">
+	<input type="button" value="3" class="nub">
+	<input type="button" value="4" class="nub">
+	<input type="button" value="5" class="nub">
+	<input type="button" value="6" class="nub">
+	<input type="button" value="7" class="nub">
+	<input type="button" value="8" class="nub">
+	<input type="button" value="9" class="nub">
+	<input type="button" value="*" class="sign">
+	<input type="button" value="/" class="sign">
+	<input type="button" value="+" class="sign">
+	<input type="button" value="-" class="sign">
+	<input type="button" value="=" class="result">
+	<input type="button" value="c" class="clear">
+	<script src="script/jquery.js"></script>
+	<script>
+	var nub1=""
+	var nub2=""
+	var sign=""
+	var result=0
+       $(".nub").click(function(){
+       	var nub=$(this).val();
+       	if(sign==""){
+       		nub1+=nub;
+       		$(".txt").val(nub1);
+       	}else{
+       		nub2+=nub;
+       		$(".txt").val(nub2);
+       	}
+       })
+       $(".sign").click(function(){
+       	 sign=$(this).val(); 
+       	   })
+       $(".result").click(function(){
+          if(sign=="+"){
+       	 	result=(Number(nub1)+Number(nub2));
+       	 }	
+       	 if(sign=="-"){
+       	 	result=(Number(nub1)-Number(nub2));
+       	 }
+       	 if(sign=="*"){
+       	 	result=(Number(nub1)*Number(nub2));
+       	 }
+       	 if(sign=="/"){
+       	 	result=(Number(nub1)/Number(nub2));
+       	 }
+       		$(".txt").val(result);
+     
+       	})
+       	
+        $(".clear").click(function(){
+          nub1=""
+          nub2=""
+          sign=""
+        	$(".txt").val("")
+        })
+	</script>
+</body>
+</html>
